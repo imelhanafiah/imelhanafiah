@@ -1,39 +1,45 @@
 /* Mengatur background halaman dengan gradasi hijau muda */
 body {
     background: linear-gradient(to bottom, #d4fc79, #96e6a1);
-    font-family: 'Georgia', serif; /* Font formal tapi tetap elegan */
-    color: #333; /* Warna font hitam keabu-abuan agar nyaman */
+    font-family: 'Arial', sans-serif; /* Font sederhana & elegan */
+    color: #333; /* Warna teks hitam keabu-abuan agar nyaman */
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
-/* Header dengan garis pembatas */
+/* HEADER */
 header {
-    background: linear-gradient(to right, #4CAF50, #45a049);
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: white;
+    text-align: center;
     padding: 20px;
     font-size: 24px;
-    border-bottom: 3px solid #2d6a4f; /* Garis pembatas */
+    font-weight: bold;
+    border-bottom: 4px solid #1B5E20; /* Garis pembatas bawah */
 }
 
-/* Footer dengan garis pembatas */
+/* FOOTER */
 footer {
-    background: linear-gradient(to right, #45a049, #4CAF50);
+    background: linear-gradient(to right, #2E7D32, #4CAF50);
     color: white;
+    text-align: center;
     padding: 15px;
-    font-size: 18px;
-    border-top: 3px solid #2d6a4f; /* Garis pembatas */
+    font-size: 16px;
+    border-top: 4px solid #1B5E20; /* Garis pembatas atas */
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* Konten utama dengan teks rata kanan-kiri dan center */
-.content {
-    max-width: 800px;
+/* KONTEN UTAMA */
+main {
+    max-width: 900px;
     margin: 50px auto;
+    padding: 20px;
     text-align: justify;
+    background: rgba(255, 255, 255, 0.8); /* Latar belakang konten semi transparan */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
