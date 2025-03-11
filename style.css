@@ -1,77 +1,48 @@
-/* Mengatur background halaman dengan warna dasar */
 body {
-    background: #f8f5f0; /* Warna krem lembut */
-    font-family: 'Arial', sans-serif;
-    color: #000; /* Warna teks hitam */
-    margin: 0;
-    padding: 0;
-}
-
-/* HEADER */
-header {
-    background: #ded3b9; /* Warna krem lebih gelap */
-    color: black;
-    text-align: center;
-    padding: 20px;
-    font-size: 26px;
-    font-weight: bold;
-    border-bottom: 4px solid #bba88a; /* Garis pembatas bawah */
-}
-
-/* FOOTER */
-footer {
-    background: #ded3b9; /* Warna krem lebih gelap seperti header */
-    color: black;
-    text-align: center;
-    padding: 15px;
-    font-size: 16px;
-    border-top: 4px solid #bba88a; /* Garis pembatas atas */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* KONTEN UTAMA */
-main {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white; /* Latar belakang putih untuk membedakan */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* TABEL */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-/* LINK NAVIGASI */
-.nav-links {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: blue;
-    margin: 0 10px;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d4edda, #a8df8e);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.5em;
+        }
+        
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        footer {
+            background: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Header Laman Web
+    </header>
+    <main>
+        <p>Selamat datang di laman web dengan background gradasi hijau yang menenangkan.</p>
+    </main>
+    <footer>
+        &copy; 2025 Laman Web Anda. Hak Cipta Dilindungi.
+    </footer>
 
 
 
