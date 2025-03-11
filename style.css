@@ -1,4 +1,4 @@
-/* Warna background halaman utama */
+/* Warna background utama */
 body {
     background-color: #e3f2fd; /* Warna biru muda */
     font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: #007bff; /* Warna biru lebih tua */
+    background-color: #007bff; /* Warna biru */
     color: white;
     text-align: center;
     padding: 20px;
@@ -17,11 +17,17 @@ header {
     border-bottom: 4px solid #0056b3;
 }
 
+/* Gaya tulisan di header */
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
 /* KONTEN UTAMA */
 main {
     width: 80%;
     margin: 20px auto;
-    background-color: #ffffff; /* Warna putih untuk kontras */
+    background-color: #ffffff; /* Warna putih agar kontras */
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -39,10 +45,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-
-
-
-
-
-
