@@ -1,7 +1,56 @@
+/* Mengatur background halaman dengan gradasi cerah */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    color: darkred;
+
+/* Gaya untuk header */
+header {
+    background: linear-gradient(to right, #ff6a88, #ff99ac);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
+
+/* Gaya untuk tombol */
+button {
+    background: linear-gradient(to right, #f6d365, #fda085);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    transform: scale(1.05);
+}
+
+/* Gaya untuk card */
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Gaya untuk teks */
+h1, h2, h3 {
+    color: #ff5f6d;
+}
+
+p {
+    color: #555;
+}
+
