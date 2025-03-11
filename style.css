@@ -1,26 +1,35 @@
-/* Background halaman dengan gradasi hijau muda */
+/* Mengatur warna background halaman */
 body {
-    background: linear-gradient(to bottom, #d4fc79, #96e6a1);
-    font-family: 'Georgia', serif;
-    color: #333;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    position: relative;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-/* HEADER */
+/* Gaya untuk header */
 header {
-    background: #4CAF50;
+    background-color: #007bff;
     color: white;
+    text-align: center;
     padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    border-bottom: 5px solid #2E7D32;
 }
 
-/* KONTEN UTAMA */
+/* Gaya untuk konten utama */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 main {
     max-width: 900px;
     margin: 50px auto;
