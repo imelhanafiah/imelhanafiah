@@ -13,8 +13,7 @@ header {
     color: white;
     font-size: 24px;
     font-weight: bold;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-bottom: 3px solid #2c6e49; /* Garis bawah header */
 }
 
 footer {
@@ -23,8 +22,7 @@ footer {
     text-align: center;
     color: white;
     font-size: 16px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top: 3px solid #2c6e49; /* Garis atas footer */
     position: fixed;
     bottom: 0;
     width: 100%;
