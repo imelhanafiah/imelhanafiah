@@ -1,159 +1,70 @@
-/* Styling Header */
-header {
-    background-color: #007bff;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Styling Navbar */
-nav {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Styling Form Contact */
+.contact-form {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu li {
-    display: inline-block;
-}
-
-.menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 12px 18px;
-    background-color: #0056b3;
-    border-radius: 8px;
-    transition: 0.3s ease-in-out;
-}
-
-.menu a:hover {
-    background-color: #003d80;
-    transform: scale(1.05);
-}
-
-/* Styling Main Content */
-main {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 12px;
-    width: 85%;
-    max-width: 900px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-main h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #343a40;
-}
-
-main p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Styling Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-/* Membuat tabel lebih rapi dan berada di tengah */
-.table-container {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 25px;
-}
-
-/* Styling tabel agar tampak lebih profesional */
-table {
-    width: 65%;
-    max-width: 650px;
-    border-collapse: collapse;
+    max-width: 500px;
     background-color: white;
+    padding: 20px;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 
-/* Styling untuk header dan sel */
-th, td {
-    border: 1px solid #ddd;
-    padding: 14px;
-    text-align: left;
+/* Styling untuk label dan input */
+.contact-form label {
     font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* Styling untuk baris header */
-th {
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Styling textarea */
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Styling tombol Kirim */
+.contact-form button {
+    display: block;
+    width: 100%;
     background-color: #007bff;
     color: white;
+    padding: 12px;
+    font-size: 18px;
     font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
     text-align: center;
 }
 
-/* Warna alternatif setiap baris */
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Hover efek untuk baris */
-tr:hover {
-    background-color: #d1ecf1;
-}
-
-/* Styling khusus untuk kolom pertama agar tampak lebih rapi */
-td:first-child {
-    font-weight: bold;
-    background-color: #e9f5ff;
-    width: 40%;
-}
-
-/* Styling untuk konten dalam sel */
-td {
-    width: 60%;
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
-    table {
+    .contact-form {
         width: 90%;
     }
 
-    th, td {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .menu {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu a {
-        display: block;
-        text-align: center;
-        width: 80%;
-        margin: auto;
+    .contact-form button {
+        font-size: 16px;
     }
 }
