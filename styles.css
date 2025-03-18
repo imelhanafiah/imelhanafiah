@@ -1,4 +1,3 @@
-/* Styling Header */
 header {
     background-color: #007bff;
     padding: 20px;
@@ -6,7 +5,6 @@ header {
     color: white;
 }
 
-/* Styling Navbar */
 nav {
     text-align: center;
     margin-top: 10px;
@@ -18,7 +16,7 @@ nav {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Jarak antar menu */
+    gap: 30px;
 }
 
 .menu li {
@@ -39,7 +37,6 @@ nav {
     background-color: #003d80;
 }
 
-/* Styling Main Content */
 main {
     text-align: center;
     margin-top: 20px;
@@ -52,12 +49,10 @@ main {
     margin-right: auto;
 }
 
-/* Styling untuk judul dan teks deskripsi agar di tengah */
 main h1, main p {
     text-align: center;
 }
 
-/* Styling Footer */
 footer {
     background-color: #343a40;
     color: white;
@@ -66,7 +61,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Membuat tabel lebih rapi dan berada di tengah */
 .table-container {
     display: flex;
     justify-content: center;
@@ -75,7 +69,6 @@ footer {
     width: 100%;
 }
 
-/* Styling tabel agar rapi */
 table {
     width: 100%;
     max-width: 700px;
@@ -87,25 +80,59 @@ table {
     margin: auto;
 }
 
-/* Styling untuk header dan sel */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
 }
 
-/* Styling untuk baris header */
 th {
     background-color: #007bff;
     color: white;
 }
 
-/* Warna alternatif setiap baris */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Hover efek untuk baris */
 tr:hover {
     background-color: #d1ecf1;
+}
+
+td input, td textarea {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: 0.3s; 
+}
+
+td input:focus, td textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    outline: none;
+}
+
+td button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+td button:hover {
+    background-color: #0056b3;
+}
+
+td button:active {
+    background-color: #003d80;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
