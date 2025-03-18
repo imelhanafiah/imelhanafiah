@@ -82,7 +82,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
-    text-align: left;
+    text-align: center; /* Membuat teks dalam tabel rata tengah */
 }
 
 /* Styling untuk baris header */
@@ -100,4 +100,31 @@ tr:nth-child(even) {
 /* Hover efek untuk baris */
 tr:hover {
     background-color: #d1ecf1;
+}
+
+/* Styling input dan textarea agar rata tengah */
+td input, td textarea {
+    display: block;
+    margin: auto;
+    width: 90%; /* Sesuaikan lebar agar proporsional */
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center; /* Membuat teks dalam input rata tengah */
+}
+
+/* Styling tombol Kirim agar berada di tengah */
+td button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #0056b3;
 }
