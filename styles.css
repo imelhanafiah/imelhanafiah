@@ -59,3 +59,83 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+/* Membuat tabel lebih rapi dan berada di tengah */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 60%; /* Lebar tabel */
+    border-collapse: collapse;
+    background-color: white; /* Warna latar belakang */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk header dan sel */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styling untuk baris header */
+th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Warna alternatif setiap baris */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover efek untuk baris */
+tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* Membuat tabel lebih rapi dan berada di tengah */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 60%; /* Lebar tabel */
+    border-collapse: collapse;
+    background-color: white; /* Warna latar belakang */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk header dan sel */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Styling untuk baris header */
+th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Warna alternatif setiap baris */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover efek untuk baris */
+tr:hover {
+    background-color: #d1ecf1;
+}
