@@ -1,3 +1,4 @@
+/* Styling Header */
 header {
     background-color: #007bff;
     padding: 20px;
@@ -5,6 +6,7 @@ header {
     color: white;
 }
 
+/* Styling Navbar */
 nav {
     text-align: center;
     margin-top: 10px;
@@ -37,6 +39,7 @@ nav {
     background-color: #003d80;
 }
 
+/* Styling Main Content */
 main {
     text-align: center;
     margin-top: 20px;
@@ -53,6 +56,7 @@ main h1, main p {
     text-align: center;
 }
 
+/* Styling Footer */
 footer {
     background-color: #343a40;
     color: white;
@@ -61,6 +65,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Membuat tabel lebih rapi dan berada di tengah */
 .table-container {
     display: flex;
     justify-content: center;
@@ -69,6 +74,7 @@ footer {
     width: 100%;
 }
 
+/* Styling tabel agar rapi */
 table {
     width: 100%;
     max-width: 700px;
@@ -80,26 +86,32 @@ table {
     margin: auto;
 }
 
+/* Styling untuk header dan sel */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
 }
 
+/* Styling untuk baris header */
 th {
     background-color: #007bff;
     color: white;
 }
 
+/* Warna alternatif setiap baris */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Hover efek untuk baris */
 tr:hover {
     background-color: #d1ecf1;
 }
 
-td input, td textarea {
+/* Styling input dan textarea dalam tabel */
+td input, 
+td textarea {
     display: block;
     margin: auto;
     width: 90%;
@@ -107,15 +119,19 @@ td input, td textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
-td input:focus, td textarea:focus {
+/* Efek saat input atau textarea dipilih */
+td input:focus, 
+td textarea:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     outline: none;
+    background-color: #e9f5ff;
 }
 
+/* Styling tombol */
 td button {
     display: block;
     margin: 10px auto;
@@ -126,13 +142,18 @@ td button {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 16px;
 }
 
+/* Efek hover pada tombol */
 td button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
+/* Efek klik pada tombol */
 td button:active {
     background-color: #003d80;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
 }
