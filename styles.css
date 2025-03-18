@@ -47,9 +47,14 @@ main {
     background-color: #f8f9fa;
     border-radius: 10px;
     width: 80%;
-    max-width: 900px; /* Tambahkan batas lebar agar lebih rapi */
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Styling untuk judul dan teks deskripsi agar di tengah */
+main h1, main p {
+    text-align: center;
 }
 
 /* Styling Footer */
@@ -65,28 +70,28 @@ footer {
 .table-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Pastikan tabel benar-benar di tengah */
+    align-items: center;
     margin-top: 20px;
     width: 100%;
 }
 
 /* Styling tabel agar rapi */
 table {
-    width: 100%;  
-    max-width: 700px; /* Batasi agar tabel tidak terlalu lebar */
+    width: 100%;
+    max-width: 700px;
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: auto; /* Ini memastikan tabel benar-benar di tengah */
+    margin: auto;
 }
 
 /* Styling untuk header dan sel */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
-    text-align: center; /* Membuat teks dalam tabel rata tengah */
+    text-align: center;
 }
 
 /* Styling untuk baris header */
@@ -102,4 +107,5 @@ tr:nth-child(even) {
 
 /* Hover efek untuk baris */
 tr:hover {
-    background-color: #d1ecf
+    background-color: #d1ecf1;
+}
