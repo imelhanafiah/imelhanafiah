@@ -132,7 +132,6 @@ td button {
     transition: 0.3s;
 }
 
-/* Efek hover tombol */
 td button:hover {
     background-color: #0056b3;
 }
@@ -140,4 +139,8 @@ td button:hover {
 td button:active {
     background-color: #003d80;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#index main p {
+    text-align: justify;
 }
