@@ -52,7 +52,6 @@ main {
     margin-right: auto;
 }
 
-/* Styling untuk judul dan teks deskripsi agar di tengah */
 main h1, main p {
     text-align: center;
 }
@@ -66,7 +65,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Membuat tabel lebih rapi dan berada di tengah */
 .table-container {
     display: flex;
     justify-content: center;
@@ -75,7 +73,6 @@ footer {
     width: 100%;
 }
 
-/* Styling tabel agar rapi */
 table {
     width: 100%;
     max-width: 700px;
@@ -87,30 +84,25 @@ table {
     margin: auto;
 }
 
-/* Styling untuk header dan sel */
 th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: center;
 }
 
-/* Styling untuk baris header */
 th {
     background-color: #007bff;
     color: white;
 }
 
-/* Warna alternatif setiap baris */
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-/* Hover efek untuk baris */
 tr:hover {
     background-color: #d1ecf1;
 }
 
-/* Styling Input dan Textarea */
 td input, td textarea {
     display: block;
     margin: auto;
@@ -119,17 +111,15 @@ td input, td textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    transition: 0.3s; /* Efek transisi */
+    transition: 0.3s;
 }
 
-/* Efek saat memilih input dan textarea */
 td input:focus, td textarea:focus {
     border-color: #007bff;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
     outline: none;
 }
 
-/* Styling tombol Kirim */
 td button {
     display: block;
     margin: 10px auto;
@@ -147,7 +137,6 @@ td button:hover {
     background-color: #0056b3;
 }
 
-/* Efek saat tombol diklik */
 td button:active {
     background-color: #003d80;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
