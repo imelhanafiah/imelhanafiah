@@ -1,70 +1,154 @@
-/* Styling Form Contact */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: auto;
-}
-
-/* Styling untuk label dan input */
-.contact-form label {
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-/* Styling textarea */
-.contact-form textarea {
-    resize: vertical;
-    height: 100px;
-}
-
-/* Styling tombol Kirim */
-.contact-form button {
-    display: block;
-    width: 100%;
+/* Styling Header */
+header {
     background-color: #007bff;
+    padding: 20px;
+    text-align: center;
     color: white;
-    padding: 12px;
+}
+
+/* Styling Navbar */
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar menu */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
     font-size: 18px;
-    font-weight: bold;
-    border: none;
+    padding: 10px 15px;
+    background-color: #0056b3;
     border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #003d80;
+}
+
+/* Styling Main Content */
+main {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling untuk judul dan teks deskripsi agar di tengah */
+main h1, main p {
     text-align: center;
 }
 
-.contact-form button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+/* Styling Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
 
-/* Responsif untuk layar kecil */
-@media (max-width: 768px) {
-    .contact-form {
-        width: 90%;
-    }
+/* Membuat tabel lebih rapi dan berada di tengah */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
 
-    .contact-form button {
-        font-size: 16px;
-    }
+/* Styling tabel agar rapi */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+/* Styling untuk header dan sel */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Styling untuk baris header */
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Warna alternatif setiap baris */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover efek untuk baris */
+tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* Styling Input dan Textarea */
+td input, td textarea {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: 0.3s; /* Efek transisi */
+}
+
+/* Efek saat memilih input dan textarea */
+td input:focus, td textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    outline: none;
+}
+
+/* Styling tombol Kirim */
+td button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efek hover tombol */
+td button:hover {
+    background-color: #0056b3;
+}
+
+/* Efek saat tombol diklik */
+td button:active {
+    background-color: #003d80;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
