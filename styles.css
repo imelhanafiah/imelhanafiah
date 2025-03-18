@@ -65,17 +65,21 @@ footer {
 .table-container {
     display: flex;
     justify-content: center;
+    align-items: center; /* Pastikan tabel benar-benar di tengah */
     margin-top: 20px;
+    width: 100%;
 }
 
+/* Styling tabel agar rapi */
 table {
-    width: 100%;  /* Lebar tabel mengikuti kontainer */
-    max-width: 700px; /* Tambahkan batas maksimal */
+    width: 100%;  
+    max-width: 700px; /* Batasi agar tabel tidak terlalu lebar */
     border-collapse: collapse;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Ini memastikan tabel benar-benar di tengah */
 }
 
 /* Styling untuk header dan sel */
@@ -89,7 +93,6 @@ th, td {
 th {
     background-color: #007bff;
     color: white;
-    text-align: center;
 }
 
 /* Warna alternatif setiap baris */
@@ -99,32 +102,4 @@ tr:nth-child(even) {
 
 /* Hover efek untuk baris */
 tr:hover {
-    background-color: #d1ecf1;
-}
-
-/* Styling input dan textarea agar rata tengah */
-td input, td textarea {
-    display: block;
-    margin: auto;
-    width: 90%; /* Sesuaikan lebar agar proporsional */
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    text-align: center; /* Membuat teks dalam input rata tengah */
-}
-
-/* Styling tombol Kirim agar berada di tengah */
-td button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-td button:hover {
-    background-color: #0056b3;
-}
+    background-color: #d1ecf
