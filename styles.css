@@ -141,3 +141,61 @@ td button:active {
 #index main p {
     text-align: justify;
 }
+
+/* Navbar Styling */
+header {
+    background-color: #007bff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Mengurangi jarak antar menu */
+    flex-wrap: wrap; /* Agar menu tidak bertumpuk di layar kecil */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Ukuran font sedikit diperkecil */
+    padding: 10px 12px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    white-space: nowrap; /* Mencegah teks terpotong */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column; /* Mengubah menu menjadi vertikal */
+        align-items: center;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        width: 80%; /* Memastikan menu tidak terlalu lebar */
+        text-align: center;
+    }
+}
