@@ -1,7 +1,7 @@
 /* Styling Header */
 header {
     background-color: #007bff;
-    padding: 20px;
+    padding: 15px; /* Kurangi padding agar tidak terlalu besar */
     text-align: center;
     color: white;
 }
@@ -16,11 +16,11 @@ nav {
 .menu {
     list-style: none;
     padding: 0;
-    margin: 0 auto; /* Memastikan menu tetap di tengah */
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px; /* Kurangi jarak antar tombol */
     flex-wrap: wrap;
     width: fit-content;
 }
@@ -32,8 +32,8 @@ nav {
 .menu a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 10px 12px;
+    font-size: 14px; /* Perkecil ukuran font */
+    padding: 8px 10px; /* Kurangi padding */
     background-color: #0056b3;
     border-radius: 5px;
     transition: 0.3s;
@@ -48,12 +48,12 @@ nav {
 /* Styling Main Content */
 main {
     text-align: center;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 15px; /* Kurangi margin */
+    padding: 15px;
     background-color: #f8f9fa;
     border-radius: 10px;
-    width: 80%;
-    max-width: 900px;
+    width: 85%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,8 +71,8 @@ footer {
     background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 8px; /* Kurangi padding agar lebih proporsional */
+    margin-top: 15px;
 }
 
 /* Styling Table */
@@ -80,7 +80,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
     width: 100%;
 }
 
@@ -97,7 +97,7 @@ table {
 
 th, td {
     border: 1px solid #ddd;
-    padding: 12px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -114,44 +114,6 @@ tr:hover {
     background-color: #d1ecf1;
 }
 
-td input, td textarea {
-    display: block;
-    margin: auto;
-    width: 90%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    text-align: center;
-    transition: 0.3s;
-}
-
-td input:focus, td textarea:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-    outline: none;
-}
-
-td button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-td button:hover {
-    background-color: #0056b3;
-}
-
-td button:active {
-    background-color: #003d80;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 /* Responsive Design */
 @media screen and (max-width: 600px) {
     nav {
@@ -159,7 +121,7 @@ td button:active {
     }
 
     .menu {
-        flex-direction: column; /* Menu berubah menjadi vertikal di layar kecil */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -175,7 +137,7 @@ td button:active {
     }
 
     main {
-        width: 90%; /* Agar konten lebih responsif */
-        padding: 15px;
+        width: 90%;
+        padding: 12px;
     }
 }
