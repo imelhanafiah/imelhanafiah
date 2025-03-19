@@ -15,11 +15,13 @@ nav {
 .menu {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Menengahkan menu */
     display: flex;
     justify-content: center;
-    gap: 15px; /* Mengurangi jarak antar menu */
-    flex-wrap: wrap; /* Agar menu tidak bertumpuk di layar kecil */
+    align-items: center; /* Posisikan menu di tengah */
+    gap: 15px;
+    flex-wrap: wrap;
+    width: fit-content; /* Menyesuaikan ukuran sesuai isi */
 }
 
 .menu li {
