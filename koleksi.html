@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Koleksi Buku - Perpustakaan Imel</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Gunakan CSS yang sama -->
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", Times, serif; /* Disamakan dengan beranda */
             padding: 20px;
             background-color: #f3f3f3;
         }
+
         h2 {
             color: #0056b3;
             text-align: center;
+            margin-top: 30px;
         }
+
+        p {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
+
         li {
             background: white;
-            padding: 15px;
-            margin: 10px 0;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
+            max-width: 200px;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         a {
             text-decoration: none;
             color: #007bff;
             display: block;
             margin-top: 10px;
+            font-weight: bold;
         }
+
         a:hover {
             text-decoration: underline;
-        }
-        img {
-            max-width: 150px;
-            height: auto;
-            border-radius: 8px;
         }
     </style>
 </head>
