@@ -85,6 +85,10 @@
 
   // Inisialisasi slide pertama
   showSlide(slideIndex);
+  setInterval(() => {
+    slideIndex++;
+    showSlide(slideIndex);
+  }, 5000);
 </script>
 </body>
 </html>
