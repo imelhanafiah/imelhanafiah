@@ -1,6 +1,6 @@
 /* Styling Header */
 header {
-    background-color: #3A7CA5; /* biru abu lembut */
+    background-color: #FFB085; /* peach lembut */
     padding: 15px;
     text-align: center;
     color: #FFFFFF; /* teks putih */
@@ -34,7 +34,7 @@ nav {
     color: #FFFFFF;
     font-size: 14px;
     padding: 8px 14px;
-    background-color: #517EA6; /* tombol biru keabu-an */
+    background-color: #FF936B; /* peach lebih gelap untuk tombol */
     border-radius: 6px;
     transition: 0.3s;
     display: inline-block;
@@ -42,7 +42,7 @@ nav {
 }
 
 .menu a:hover {
-    background-color: #345B7E; /* hover lebih gelap */
+    background-color: #D97B54; /* hover peach tua */
 }
 
 /* Styling Main Content */
@@ -50,8 +50,8 @@ main {
     text-align: center;
     margin-top: 15px;
     padding: 20px;
-    background-color: #FFFFFF; /* putih bersih */
-    color: #333333; /* abu gelap untuk teks */
+    background-color: #FFF7F1; /* putih peachy */
+    color: #4A4A4A; /* abu netral */
     border-radius: 12px;
     width: 85%;
     max-width: 800px;
@@ -70,7 +70,7 @@ main h1, main p {
 
 /* Styling Footer */
 footer {
-    background-color: #3A7CA5; /* biru abu */
+    background-color: #FFB085;
     color: white;
     text-align: center;
     padding: 10px;
@@ -104,16 +104,16 @@ th, td {
 }
 
 th {
-    background-color: #3A7CA5; /* header biru abu */
+    background-color: #FFB085; /* header peach */
     color: #FFFFFF;
 }
 
 tr:nth-child(even) {
-    background-color: #F1F7FB; /* putih kebiruan */
+    background-color: #FFE5D5; /* peach muda */
 }
 
 tr:hover {
-    background-color: #E1EFFA;
+    background-color: #FFD1BA;
 }
 
 /* Responsive Design */
