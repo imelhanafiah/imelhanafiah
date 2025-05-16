@@ -1,142 +1,162 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Perpustakaan Imel</title>
-    <link rel="stylesheet" href="styles.css?v=2" />
-    <style>
-        /* Popup cookie sederhana */
-        #cookie-popup {
-            display: none;
-            background-color: #a9d5a9;
-            padding: 20px;
-            border-radius: 10px;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            z-index: 1000;
-            font-family: Arial, sans-serif;
-        }
-        #cookie-popup a {
-            color: #0645AD;
-            text-decoration: underline;
-        }
-        #cookie-popup button {
-            padding: 8px 16px;
-            margin-left: 10px;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-        }
-        #cookie-popup .accept-btn {
-            background-color: #2c7a2c;
-            color: white;
-        }
-        #cookie-popup .manage-btn {
-            background-color: #ccc;
-            color: #333;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perpustakaan Imel</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Styling popup cookie versi beda */
+  #cookie-consent {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    max-width: 350px;
+    background-color: #d0e8f2;
+    border-left: 6px solid #2a659f;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 18px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0b1a2d;
+    z-index: 9999;
+  }
+  #cookie-consent p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #cookie-consent a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #cookie-consent a:hover {
+    text-decoration: underline;
+  }
+  #cookie-buttons {
+    text-align: right;
+  }
+  #cookie-consent button {
+    border: none;
+    padding: 8px 14px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 8px;
+    transition: background-color 0.3s ease;
+  }
+  #accept-btn {
+    background-color: #2a659f;
+    color: white;
+  }
+  #accept-btn:hover {
+    background-color: #244f7d;
+  }
+  #settings-btn {
+    background-color: #e2e8f0;
+    color: #2a659f;
+  }
+  #settings-btn:hover {
+    background-color: #cbd5e1;
+  }
+</style>
 </head>
 <body id="index">
 
 <header>
-    <h1>Perpustakaan Imel</h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="koleksi.html">Koleksi Buku</a></li>
-            <li><a href="tabel.php">Tabel Perkalian</a></li>
-        </ul>
-    </nav>
+  <h1>Perpustakaan Imel</h1>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+      <li><a href="koleksi.html">Koleksi Buku</a></li>
+      <li><a href="tabel.php">Tabel Perkalian</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main>
-    <h2>Hai, Selamat Datang!</h2>
-    <p>
-        Perkenalkan nama saya <b>Imel Hanafiah Manurung</b>. Ini adalah perpustakaan pribadi saya, tempat saya menyimpan koleksi buku, referensi, serta tugas-tugas akademik yang telah saya kerjakan selama perjalanan studi saya.
-    </p>
-    <p>
-        Perpustakaan ini berisi berbagai materi, mulai dari buku bacaan umum hingga sumber akademik yang mendukung studi saya. Selain itu, saya juga berbagi hasil penelitian dan proyek yang mungkin bermanfaat bagi Anda yang mencari referensi tambahan.
-    </p>
+  <h2>Hai, Selamat Datang!</h2>
+  <p>
+    Perkenalkan nama saya <b>Imel Hanafiah Manurung</b>. Ini adalah perpustakaan pribadi saya, tempat saya menyimpan koleksi buku, referensi, serta tugas-tugas akademik yang telah saya kerjakan selama perjalanan studi saya.
+  </p>
+  <p>
+    Perpustakaan ini berisi berbagai materi, mulai dari buku bacaan umum hingga sumber akademik yang mendukung studi saya. Selain itu, saya juga berbagi hasil penelitian dan proyek yang mungkin bermanfaat bagi Anda yang mencari referensi tambahan.
+  </p>
 
-    <h2>Kerja Sama Perpustakaan</h2>
-    <p>
-        Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank" rel="noopener noreferrer">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
-    </p>
+  <h2>Kerja Sama Perpustakaan</h2>
+  <p>
+    Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank" rel="noopener noreferrer">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
+  </p>
 </main>
 
 <section id="event" style="margin-top: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
-    <h2 style="text-align: center;">Event Perpustakaan Mitra</h2>
-    <p style="text-align: center;">Kami juga mengikuti dan mendukung berbagai kegiatan yang diselenggarakan oleh mitra perpustakaan kami.</p>
+  <h2 style="text-align: center;">Event Perpustakaan Mitra</h2>
+  <p style="text-align: center;">Kami juga mengikuti dan mendukung berbagai kegiatan yang diselenggarakan oleh mitra perpustakaan kami.</p>
 
-    <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-        <img src="workshop-literasi.png" alt="Poster Seminar" style="width: 300px; height: auto; border-radius: 10px;" />
-        <div style="flex: 1; min-width: 250px;">
-            <h3>The 6th International Seminar of Language, Art, and Literature Education</h3>
-            <p><strong>Tanggal:</strong> 1 September 2024</p>
-            <p><strong>Tempat:</strong> Universitas Negeri Medan</p>
-            <p><strong>Deskripsi:</strong> Seminar internasional ini menghadirkan pembicara dari dalam dan luar negeri yang membahas isu-isu terkini dalam pendidikan bahasa, seni, dan sastra.</p>
-            <a href="https://www.unimed.ac.id/2024/09/01/the-6th-international-seminar-of-language-art-and-literature-education/" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
-        </div>
+  <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+    <img src="workshop-literasi.png" alt="Poster Seminar" style="width: 300px; height: auto; border-radius: 10px;" />
+    <div style="flex: 1; min-width: 250px;">
+      <h3>The 6th International Seminar of Language, Art, and Literature Education</h3>
+      <p><strong>Tanggal:</strong> 1 September 2024</p>
+      <p><strong>Tempat:</strong> Universitas Negeri Medan</p>
+      <p><strong>Deskripsi:</strong> Seminar internasional ini menghadirkan pembicara dari dalam dan luar negeri yang membahas isu-isu terkini dalam pendidikan bahasa, seni, dan sastra.</p>
+      <a href="https://www.unimed.ac.id/2024/09/01/the-6th-international-seminar-of-language-art-and-literature-education/" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
     </div>
+  </div>
 </section>
 
-<!-- Popup Cookie -->
-<div id="cookie-popup">
-    <strong>Kami Menggunakan Cookies 🍪</strong><br/>
-    Website ini Menggunakan Cookies agar situs ini berjalan dengan baik. <a href="#">Kebijakan Cookies kami</a>
-    <div style="margin-top: 10px; text-align: right;">
-        <button class="accept-btn" onclick="acceptCookie()">Terima Cookies</button>
-        <button class="manage-btn">Kelola Cookies</button>
-    </div>
+<!-- Cookie Consent Popup -->
+<div id="cookie-consent">
+  <p><strong>Perhatian!</strong> Situs ini menggunakan cookies untuk meningkatkan pengalaman Anda.</p>
+  <p>Dengan melanjutkan menggunakan situs ini, Anda menyetujui <a href="#">Kebijakan Cookies</a> kami.</p>
+  <div id="cookie-buttons">
+    <button id="accept-btn" onclick="acceptCookies()">Setuju</button>
+    <button id="settings-btn" onclick="manageCookies()">Atur Cookies</button>
+  </div>
 </div>
 
 <footer>
-    &copy; 2025 Imel Hanafiah Manurung
+  &copy; 2025 Imel Hanafiah Manurung
 </footer>
 
 <script>
-    // Fungsi set cookie
-    function setCookie(name, value, days) {
-        const d = new Date();
-        d.setTime(d.getTime() + days*24*60*60*1000);
-        const expires = "expires="+ d.toUTCString();
-        document.cookie = name + "=" + value + ";" + expires + ";path=/";
-    }
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + days*24*60*60*1000);
+    document.cookie = name + "=" + value + ";path=/;expires=" + d.toUTCString();
+  }
 
-    // Fungsi get cookie
-    function getCookie(name) {
-        const cname = name + "=";
-        const decodedCookie = decodeURIComponent(document.cookie);
-        const ca = decodedCookie.split(';');
-        for(let i=0; i<ca.length; i++) {
-            let c = ca[i].trim();
-            if (c.indexOf(cname) === 0) {
-                return c.substring(cname.length, c.length);
-            }
-        }
-        return "";
+  function getCookie(name) {
+    const cname = name + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i].trim();
+      if (c.indexOf(cname) === 0) {
+        return c.substring(cname.length, c.length);
+      }
     }
+    return "";
+  }
 
-    // Saat halaman load, cek cookie
-    window.onload = function() {
-        const accepted = getCookie("cookieAccepted");
-        if (accepted !== "yes") {
-            document.getElementById("cookie-popup").style.display = "block";
-        }
-    };
+  function acceptCookies() {
+    setCookie("userConsent", "accepted", 365);
+    document.getElementById("cookie-consent").style.display = "none";
+  }
 
-    // Saat tombol terima cookie diklik
-    function acceptCookie() {
-        setCookie("cookieAccepted", "yes", 365);
-        document.getElementById("cookie-popup").style.display = "none";
+  function manageCookies() {
+    alert("Fitur pengaturan cookies akan segera hadir!");
+  }
+
+  window.onload = function() {
+    if(getCookie("userConsent") !== "accepted") {
+      document.getElementById("cookie-consent").style.display = "block";
     }
+  };
 </script>
 
 </body>
