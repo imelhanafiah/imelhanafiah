@@ -16,9 +16,10 @@
 
     if (!getCookie("visited")) {
         alert("Selamat datang di Perpustakaan Imel! 😊");
-        document.cookie = "visited=true; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/";
+        document.cookie = "visited=true; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/; SameSite=Lax; Secure";
+        console.log("Cookie baru disimpan!");
     } else {
-        console.log("Pengunjung lama. Selamat datang kembali!");
+        console.log("Cookie sudah ada:", document.cookie);
     }
 </script>
     <header>
