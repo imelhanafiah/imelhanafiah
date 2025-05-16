@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pengaturan Cookies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .cookie-setting {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f1f5f9;
+      border-radius: 8px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .switch {
+      float: right;
+    }
+    .btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .btn-save {
+      background-color: #2a659f;
+      color: white;
+    }
+    .btn-save:hover {
+      background-color: #1e4a75;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pengaturan Cookies</h1>
+
+  <div class="cookie-setting">
+    <label>Cookie Wajib</label>
+    <p>Cookie ini diperlukan agar situs dapat berfungsi dengan baik dan tidak dapat dinonaktifkan.</p>
+  </div>
+
+  <div class="cookie-setting">
+    <label>Cookie Statistik</label>
+    <label class="switch">
+      <input type="checkbox" id="analytics-cookies" checked />
+    </label>
+    <p>Cookie ini membantu kami memahami bagaimana pengunjung menggunakan situs.</p>
+  </div>
+
+  <div class="cookie-setting">
+    <label>Cookie Preferensi</label>
+    <label class="switch">
+      <input type="checkbox" id="prefs-cookies" />
+    </label>
+    <p>Digunakan untuk menyimpan preferensi pengguna seperti bahasa atau tema.</p>
+  </div>
+
+  <button class="btn btn-save" onclick="saveSettings()">Simpan Pengaturan</button>
+
+  <script>
+    function saveSettings() {
+      alert("Pengaturan Anda telah disimpan. (Simulasi)");
+      // Di masa depan, tambahkan penyimpanan cookie atau localStorage di sini
+    }
+  </script>
+</body>
+</html>
