@@ -1,79 +1,44 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Perpustakaan Imel</title>
-    <link rel="stylesheet" href="styles.css?v=2" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Test Cookie</title>
 </head>
-<body id="index">
-
+<body>
 <script>
-  function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-    return null;
-  }
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days*24*60*60*1000));
+  const expires = "expires="+ d.toUTCString();
+  document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
 
-  if (!getCookie('visited')) {
-    alert('Selamat datang di Perpustakaan Imel! 😊');
-    const d = new Date();
-    d.setTime(d.getTime() + (365*24*60*60*1000)); // 1 tahun ke depan
-    document.cookie = `visited=true; expires=${d.toUTCString()}; path=/; SameSite=Lax; Secure`;
-    console.log('Cookie baru disimpan!');
-  } else {
-    console.log('Cookie sudah ada:', document.cookie);
+function getCookie(name) {
+  const cname = name + "=";
+  const decodedCookie = decodeURIComponent(document.cookie);
+  const ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while(c.charAt(0) == ' ') c = c.substring(1);
+    if(c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
   }
+  return "";
+}
+
+window.onload = function() {
+  if(getCookie("visited") === "") {
+    alert("Selamat datang di Perpustakaan Imel! 😊");
+    setCookie("visited", "true", 365);
+    console.log("Cookie dibuat.");
+  } else {
+    console.log("Cookie sudah ada:", document.cookie);
+  }
+}
 </script>
 
-<header>
-    <h1>Perpustakaan Imel</h1>
-    <nav>
-        <ul class="menu">
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact-us.html">Contact Us</a></li>
-            <li><a href="koleksi.html">Koleksi Buku</a></li>
-            <li><a href="tabel.php">Tabel Perkalian</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <h2>Hai, Selamat Datang!</h2>
-    <p>
-        Perkenalkan nama saya <b>Imel Hanafiah Manurung</b>. Ini adalah perpustakaan pribadi saya, tempat saya menyimpan koleksi buku, referensi, serta tugas-tugas akademik yang telah saya kerjakan selama perjalanan studi saya.
-    </p>
-    <p>
-        Perpustakaan ini berisi berbagai materi, mulai dari buku bacaan umum hingga sumber akademik yang mendukung studi saya. Selain itu, saya juga berbagi hasil penelitian dan proyek yang mungkin bermanfaat bagi Anda yang mencari referensi tambahan.
-    </p>
-
-    <h2>Kerja Sama Perpustakaan</h2>
-    <p>
-        Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank" rel="noopener noreferrer">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
-    </p>
-</main>
-
-<section id="event" style="margin-top: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
-    <h2 style="text-align: center;">Event Perpustakaan Mitra</h2>
-    <p style="text-align: center;">Kami juga mengikuti dan mendukung berbagai kegiatan yang diselenggarakan oleh mitra perpustakaan kami.</p>
-
-    <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-        <img src="workshop-literasi.png" alt="Poster Seminar" style="width: 300px; height: auto; border-radius: 10px;" />
-        <div style="flex: 1; min-width: 250px;">
-            <h3>The 6th International Seminar of Language, Art, and Literature Education</h3>
-            <p><strong>Tanggal:</strong> 1 September 2024</p>
-            <p><strong>Tempat:</strong> Universitas Negeri Medan</p>
-            <p><strong>Deskripsi:</strong> Seminar internasional ini menghadirkan pembicara dari dalam dan luar negeri yang membahas isu-isu terkini dalam pendidikan bahasa, seni, dan sastra.</p>
-            <a href="https://www.unimed.ac.id/2024/09/01/the-6th-international-seminar-of-language-art-and-literature-education/" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
-        </div>
-    </div>
-</section>
-
-<footer>
-    &copy; 2025 Imel Hanafiah Manurung
-</footer>
+<h1>Perpustakaan Imel</h1>
+<p>Ini halaman untuk tes cookie.</p>
 
 </body>
 </html>
