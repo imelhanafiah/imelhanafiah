@@ -9,23 +9,22 @@
 <body id="index">
 
 <script>
-    function getCookie(name) {
-        const value = "; " + document.cookie;
-        const parts = value.split("; " + name + "=");
-        if (parts.length === 2) return parts.pop().split(";").shift();
-        return null;
-    }
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+  }
 
-    if (!getCookie("visited")) {
-        alert("Selamat datang di Perpustakaan Imel! 😊");
-        // Set cookie valid 1 tahun, path root, SameSite=Lax, dan Secure (karena GitHub Pages HTTPS)
-        const expires = new Date();
-        expires.setFullYear(expires.getFullYear() + 1); // 1 tahun ke depan
-        document.cookie = "visited=true; expires=" + expires.toUTCString() + "; path=/; SameSite=Lax; Secure";
-        console.log("Cookie baru disimpan!");
-    } else {
-        console.log("Cookie sudah ada:", document.cookie);
-    }
+  if (!getCookie('visited')) {
+    alert('Selamat datang di Perpustakaan Imel! 😊');
+    const d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000)); // 1 tahun ke depan
+    document.cookie = `visited=true; expires=${d.toUTCString()}; path=/; SameSite=Lax; Secure`;
+    console.log('Cookie baru disimpan!');
+  } else {
+    console.log('Cookie sudah ada:', document.cookie);
+  }
 </script>
 
 <header>
@@ -52,7 +51,7 @@
 
     <h2>Kerja Sama Perpustakaan</h2>
     <p>
-        Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
+        Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank" rel="noopener noreferrer">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
     </p>
 </main>
 
@@ -67,7 +66,7 @@
             <p><strong>Tanggal:</strong> 1 September 2024</p>
             <p><strong>Tempat:</strong> Universitas Negeri Medan</p>
             <p><strong>Deskripsi:</strong> Seminar internasional ini menghadirkan pembicara dari dalam dan luar negeri yang membahas isu-isu terkini dalam pendidikan bahasa, seni, dan sastra.</p>
-            <a href="https://www.unimed.ac.id/2024/09/01/the-6th-international-seminar-of-language-art-and-literature-education/" target="_blank">Baca Selengkapnya</a>
+            <a href="https://www.unimed.ac.id/2024/09/01/the-6th-international-seminar-of-language-art-and-literature-education/" target="_blank" rel="noopener noreferrer">Baca Selengkapnya</a>
         </div>
     </div>
 </section>
