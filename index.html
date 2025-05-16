@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body id="index">
+
 <script>
   function getCookie(cname) {
     const name = cname + "=";
@@ -14,21 +15,21 @@
     const ca = decodedCookie.split(';');
     for(let i = 0; i < ca.length; i++) {
       let c = ca[i].trim();
-      if (c.indexOf(name) == 0) {
+      if (c.indexOf(name) === 0) {
         return c.substring(name.length, c.length);
       }
     }
     return null;
   }
 
-  if (!getCookie('visited')) {
-    alert('Selamat datang di Perpustakaan Imel!');
+  window.onload = function() {
+    if (!getCookie('visited')) {
+      alert('Selamat datang di Perpustakaan Imel!');
 
-    const d = new Date();
-    d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
-    const expires = "expires=" + d.toUTCString();
-
-    document.cookie = "visited=true;" + expires + ";path=/";
+      const d = new Date();
+      d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 tahun
+      document.cookie = "visited=true; expires=" + d.toUTCString() + "; path=/";
+    }
   }
 </script>
 
