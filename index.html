@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Perpustakaan Imel</title>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body id="index">
+
 <script>
     function getCookie(name) {
         const value = "; " + document.cookie;
         const parts = value.split("; " + name + "=");
         if (parts.length === 2) return parts.pop().split(";").shift();
+        return null;
     }
 
     if (!getCookie("visited")) {
         alert("Selamat datang di Perpustakaan Imel! 😊");
-        document.cookie = "visited=true; expires=Fri, 31 Dec 2025 23:59:59 GMT; path=/; SameSite=Lax; Secure";
+        // Set cookie valid 1 tahun, path root, SameSite=Lax, dan Secure (karena GitHub Pages HTTPS)
+        const expires = new Date();
+        expires.setFullYear(expires.getFullYear() + 1); // 1 tahun ke depan
+        document.cookie = "visited=true; expires=" + expires.toUTCString() + "; path=/; SameSite=Lax; Secure";
         console.log("Cookie baru disimpan!");
     } else {
         console.log("Cookie sudah ada:", document.cookie);
     }
 </script>
-    <header>
-        <h1>Perpustakaan Imel</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="koleksi.html">Koleksi Buku</a></li> <!-- ✅ Ditambahkan -->
-                <li><a href="tabel.php">Tabel Perkalian</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2>Hai, Selamat Datang!</h2>
-        <p>
-            Perkenalkan nama saya <b>Imel Hanafiah Manurung</b>. Ini adalah perpustakaan pribadi saya, tempat saya menyimpan koleksi buku, referensi, serta tugas-tugas akademik yang telah saya kerjakan selama perjalanan studi saya.
-        </p>
-        <p>
-            Perpustakaan ini berisi berbagai materi, mulai dari buku bacaan umum hingga sumber akademik yang mendukung studi saya. Selain itu, saya juga berbagi hasil penelitian dan proyek yang mungkin bermanfaat bagi Anda yang mencari referensi tambahan.
-        </p>
+<header>
+    <h1>Perpustakaan Imel</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+            <li><a href="tabel.php">Tabel Perkalian</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <h2>Kerja Sama Perpustakaan</h2>
-        <p>
-            Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
-        </p>
-    </main>
-  <section id="event" style="margin-top: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
+<main>
+    <h2>Hai, Selamat Datang!</h2>
+    <p>
+        Perkenalkan nama saya <b>Imel Hanafiah Manurung</b>. Ini adalah perpustakaan pribadi saya, tempat saya menyimpan koleksi buku, referensi, serta tugas-tugas akademik yang telah saya kerjakan selama perjalanan studi saya.
+    </p>
+    <p>
+        Perpustakaan ini berisi berbagai materi, mulai dari buku bacaan umum hingga sumber akademik yang mendukung studi saya. Selain itu, saya juga berbagi hasil penelitian dan proyek yang mungkin bermanfaat bagi Anda yang mencari referensi tambahan.
+    </p>
+
+    <h2>Kerja Sama Perpustakaan</h2>
+    <p>
+        Saya juga menjalin kerja sama dengan berbagai perpustakaan, termasuk <a href="https://perpustakaan.unimed.ac.id/" target="_blank">Perpustakaan Unimed</a>, untuk memperluas akses terhadap sumber bacaan berkualitas.
+    </p>
+</main>
+
+<section id="event" style="margin-top: 30px; padding: 20px; background-color: #f9f9f9; border-radius: 10px;">
     <h2 style="text-align: center;">Event Perpustakaan Mitra</h2>
     <p style="text-align: center;">Kami juga mengikuti dan mendukung berbagai kegiatan yang diselenggarakan oleh mitra perpustakaan kami.</p>
 
     <div style="display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-        <!-- Poster -->
-        <img src="workshop-literasi.png" alt="Poster Seminar" style="width: 300px; height: auto; border-radius: 10px;">
-
-        <!-- Deskripsi -->
+        <img src="workshop-literasi.png" alt="Poster Seminar" style="width: 300px; height: auto; border-radius: 10px;" />
         <div style="flex: 1; min-width: 250px;">
             <h3>The 6th International Seminar of Language, Art, and Literature Education</h3>
             <p><strong>Tanggal:</strong> 1 September 2024</p>
@@ -67,8 +71,10 @@
         </div>
     </div>
 </section>
-    <footer>
-        &copy; 2025 Imel Hanafiah Manurung
-    </footer
+
+<footer>
+    &copy; 2025 Imel Hanafiah Manurung
+</footer>
+
 </body>
 </html>
