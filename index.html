@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Perpustakaan Imel</title>
     <link rel="stylesheet" href="styles.css?v=2" />
+    <style>
+        /* Popup cookie sederhana */
+        #cookie-popup {
+            display: none;
+            background-color: #a9d5a9;
+            padding: 20px;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+        #cookie-popup a {
+            color: #0645AD;
+            text-decoration: underline;
+        }
+        #cookie-popup button {
+            padding: 8px 16px;
+            margin-left: 10px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+        #cookie-popup .accept-btn {
+            background-color: #2c7a2c;
+            color: white;
+        }
+        #cookie-popup .manage-btn {
+            background-color: #ccc;
+            color: #333;
+        }
+    </style>
 </head>
 <body id="index">
-
-<script>
-  function getCookie(cname) {
-    const name = cname + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
-    const ca = decodedCookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-      let c = ca[i].trim();
-      if (c.indexOf(name) === 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return null;
-  }
-
-  window.onload = function() {
-    if (!getCookie('visited')) {
-      alert('Selamat datang di Perpustakaan Imel!');
-
-      const d = new Date();
-      d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000)); // 1 tahun
-      document.cookie = "visited=true; expires=" + d.toUTCString() + "; path=/";
-    }
-  }
-</script>
 
 <header>
     <h1>Perpustakaan Imel</h1>
@@ -77,9 +87,57 @@
     </div>
 </section>
 
+<!-- Popup Cookie -->
+<div id="cookie-popup">
+    <strong>Kami Menggunakan Cookies 🍪</strong><br/>
+    Website ini Menggunakan Cookies agar situs ini berjalan dengan baik. <a href="#">Kebijakan Cookies kami</a>
+    <div style="margin-top: 10px; text-align: right;">
+        <button class="accept-btn" onclick="acceptCookie()">Terima Cookies</button>
+        <button class="manage-btn">Kelola Cookies</button>
+    </div>
+</div>
+
 <footer>
     &copy; 2025 Imel Hanafiah Manurung
 </footer>
+
+<script>
+    // Fungsi set cookie
+    function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + days*24*60*60*1000);
+        const expires = "expires="+ d.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Fungsi get cookie
+    function getCookie(name) {
+        const cname = name + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for(let i=0; i<ca.length; i++) {
+            let c = ca[i].trim();
+            if (c.indexOf(cname) === 0) {
+                return c.substring(cname.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    // Saat halaman load, cek cookie
+    window.onload = function() {
+        const accepted = getCookie("cookieAccepted");
+        if (accepted !== "yes") {
+            document.getElementById("cookie-popup").style.display = "block";
+        }
+    };
+
+    // Saat tombol terima cookie diklik
+    function acceptCookie() {
+        setCookie("cookieAccepted", "yes", 365);
+        document.getElementById("cookie-popup").style.display = "none";
+    }
+</script>
 
 </body>
 </html>
